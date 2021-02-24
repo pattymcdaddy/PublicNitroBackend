@@ -3,7 +3,6 @@ const app = express();
 const Discord = require('discord.js');
 const client = new Discord.Client();
 app.use(express.static("public"));
-const fs = require('fs');
 require('dotenv').config();
 const token = process.env.token;
 app.get("/", (req, res) => {
@@ -33,19 +32,6 @@ const listener = app.listen(process.env.PORT, () => {
 
 client.on("ready", () =>{
     console.log(`Logged in as ${client.user.tag}!`);
-  let botstatus = fs.readFileSync('./bot-status.json');
-  botstatus = JSON.parse(botstatus);
-  if(botstatus.activity == 'false') return;
-  if(botstatus.activitytype == 'STREAMING'){
-    client.user.setActivity(botstatus.activitytext, {
-      type: botstatus.activitytype,
-      url: botstatus.activityurl
-    });
-  } else {
-    client.user.setActivity(botstatus.activitytext, {
-      type: botstatus.activitytype
-    });
-  }
  });
 
 client.login(token);
