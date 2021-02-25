@@ -8,8 +8,13 @@ Please do not resell or redestribute this in any way.
 
  ```git clone https://github.com/ptrcko2/PublicNitroBackend```
 
+*If you choose to host this on glitch, open the following project and "remix" it:*
+
+```https://glitch.com/edit/#!/desert-planet-mammal```
+Then open the env file and add a variable for token then run the project.
+
 **Step two:**
-- Head to the .env and insert your discord bot's token.
+- Head to the .env and insert your discord bot's token. -- If you use glitch or already set this up, just skip.
 
 **Step three:**
 - Run ```npm i``` and replace the express URL inside of the Script, at line 9.
