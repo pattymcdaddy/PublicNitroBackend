@@ -11,7 +11,7 @@ app.get("/", (req, res) => {
 
 
 
-app.get("/v1/", (req, res) => {
+app.get("/v2/", (req, res) => {
     let guild = req.query.guild;
     let id = req.query.id;
     if (!guild) return res.json({"isBooster": false})
