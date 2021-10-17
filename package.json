@@ -1,17 +1,20 @@
 {
-  "name": "open-nitro-api",
-  "version": "1.0.0",
-  "description": "",
+  "name": "DiscordNitroV3",
+  "version": "3.0.0",
   "main": "index.js",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "discord.js": "^12.5.1",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "node": "^16.10.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "patrick#0001",
   "license": "ISC",
-  "dependencies": {
-    "discord.js": "^12.5.1",
-    "dotenv": "^8.2.0",
-    "express": "^4.17.1"
-  }
+  "description": ""
 }
